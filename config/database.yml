@@ -21,9 +21,19 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
 
-development:
-  <<: *default
-  database: SAVA_development
+#development:
+  #<<: *default
+  #database: SAVA_development
+
+ development: 
+  adapter: postgresql
+  encoding: utf-8
+  pool: 5
+  username: "qkyohsjcvwnokf"
+  password: "XD416PAKBZgndziMJx2wH6ieqe"
+  host: "ec2-23-21-96-129.compute-1.amazonaws.com"
+  port: "5432"
+  database: "d6b1j2lcj2a8nj"
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
