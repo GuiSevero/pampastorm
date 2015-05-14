@@ -1,10 +1,9 @@
 class CreateServices < ActiveRecord::Migration
   def change
     create_table :services do |t|
-      t.Integer :service_type
-      t.Integer :tuition_id
-      t.Float :value
-
+      t.integer :service_type
+      t.integer :tuition_id
+      t.float :value
       t.timestamps null: false
     end
   end
