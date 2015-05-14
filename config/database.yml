@@ -25,7 +25,7 @@ default: &default
   #<<: *default
   #database: SAVA_development
 
- development: 
+development: 
   adapter: postgresql
   encoding: utf-8
   pool: 5
@@ -35,14 +35,24 @@ default: &default
   port: "5432"
   database: "d6b1j2lcj2a8nj"
 
+production: 
+	adapter: postgresql
+	encoding: utf-8
+	pool: 5
+	username: "qkyohsjcvwnokf"
+	password: "XD416PAKBZgndziMJx2wH6ieqe"
+	host: "ec2-23-21-96-129.compute-1.amazonaws.com"
+	port: "5432"
+	database: "d6b1j2lcj2a8nj"
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  username: SAVA
+  #username: SAVA
 
   # The password associated with the postgres role (username).
-  password: SAVA
+  #password: SAVA
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -88,8 +98,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: SAVA_production
-  username: SAVA
-  password: <%= ENV['SAVA_DATABASE_PASSWORD'] %>
