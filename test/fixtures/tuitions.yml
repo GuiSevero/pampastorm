@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 
+  due_date: 2015-05-10
+  status: 
+
+two:
+  customer_id: 
+  due_date: 2015-05-10
+  status: 

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @tuition.customer_id %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @tuition.due_date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tuition.status %>
+</p>
+
+<%= link_to 'Edit', edit_tuition_path(@tuition) %> |
+<%= link_to 'Back', tuitions_path %>

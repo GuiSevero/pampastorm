@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @tuition_status.id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tuition_status.status %>
+</p>
+
+<%= link_to 'Edit', edit_tuition_status_path(@tuition_status) %> |
+<%= link_to 'Back', tuition_statuses_path %>
