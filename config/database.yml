@@ -26,14 +26,14 @@ default: &default
   #database: SAVA_development
 
 development: 
-  adapter: postgresql
-  encoding: utf-8
-  pool: 5
-  username: "postgres"
-  password: "gorder"
-  host: "localhost"
-  port: "5432"
-  database: "pampastorm"
+ adapter: postgresql
+ encoding: utf-8
+ pool: 5
+ username: "qkyohsjcvwnokf"
+ password: "XD416PAKBZgndziMJx2wH6ieqe"
+ host: "ec2-23-21-96-129.compute-1.amazonaws.com"
+ port: "5432"
+ database: "d6b1j2lcj2a8nj"
 
 production: 
  adapter: postgresql
