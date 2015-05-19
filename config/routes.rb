@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get    'login'   => 'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
   resources :tuition_statuses
   resources :service_types
   resources :services
