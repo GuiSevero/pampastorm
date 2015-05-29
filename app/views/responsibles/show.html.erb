@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @responsible.name %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @responsible.student_id %>
+</p>
+
+<p>
+  <strong>Occupation:</strong>
+  <%= @responsible.occupation %>
+</p>
+
+<p>
+  <strong>Mobile number:</strong>
+  <%= @responsible.mobile_number %>
+</p>
+
+<p>
+  <strong>Residencial number:</strong>
+  <%= @responsible.residencial_number %>
+</p>
+
+<p>
+  <strong>Comercial number:</strong>
+  <%= @responsible.comercial_number %>
+</p>
+
+<p>
+  <strong>Relation type:</strong>
+  <%= @responsible.relation_type %>
+</p>
+
+<%= link_to 'Edit', edit_responsible_path(@responsible) %> |
+<%= link_to 'Back', responsibles_path %>
