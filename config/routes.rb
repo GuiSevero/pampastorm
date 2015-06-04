@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :responsibles
+  resources :students
+  root   'sessions#new'
+  post   'login'   => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
   resources :tuition_statuses
   resources :service_types
   resources :services

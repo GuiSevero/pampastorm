@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  enrollment_date: 
+  birth_date: 
+  address: 
+  zip_code: MyString
+
+two:
+  name: 
+  enrollment_date: 
+  birth_date: 
+  address: 
+  zip_code: MyString

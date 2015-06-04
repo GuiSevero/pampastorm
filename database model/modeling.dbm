@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.7.1">
+<role name="SAVA"
+      superuser="true"
+      password="********">
+</role>
+
+<database name="pampastorm" encoding="UTF8" lc-collate="Portuguese_Brazil" lc-ctype="Portuguese_Brazil">
+	<role name="postgres"/>
+	<tablespace name="pg_default"/>
+</database>
+
+<schema name="public" protected="true" rect-visible="true" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="schema_migrations">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="50" y="50"/>
+	<column name="version" not-null="true">
+		<type name="character varying"/>
+	</column>
+	<index name="unique_schema_migrations" table="public.schema_migrations"
+		 concurrent="false" unique="true" fast-update="false"
+		 index-type="btree" factor="90">
+		<idxelement use-sorting="false">
+			<column name="version"/>
+		</idxelement>
+	</index>
+</table>
+
+<sequence name="tuitions_id_seq"
+	 start="1" increment="1"
+	 min-value="1" max-value="9223372036854775807"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="tuitions">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="51.7657" y="173"/>
+	<column name="id" not-null="true" default-value="nextval('tuitions_id_seq'::regclass)">
+		<type name="integer"/>
+	</column>
+	<column name="customer_id">
+		<type name="integer"/>
+	</column>
+	<column name="due_date">
+		<type name="date"/>
+	</column>
+	<column name="status">
+		<type name="integer"/>
+	</column>
+	<column name="created_at" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<column name="updated_at" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<constraint name="tuitions_pkey" type="pk-constr" factor="100" table="public.tuitions">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="services_id_seq"
+	 start="1" increment="1"
+	 min-value="1" max-value="9223372036854775807"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="services">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="483.766" y="59"/>
+	<column name="id" not-null="true" default-value="nextval('services_id_seq'::regclass)">
+		<type name="integer"/>
+	</column>
+	<column name="service_type">
+		<type name="integer"/>
+	</column>
+	<column name="tuition_id">
+		<type name="integer"/>
+	</column>
+	<column name="value">
+		<type name="double precision"/>
+	</column>
+	<column name="created_at" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<column name="updated_at" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<constraint name="services_pkey" type="pk-constr" factor="100" table="public.services">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="service_types_id_seq"
+	 start="1" increment="1"
+	 min-value="1" max-value="9223372036854775807"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="service_types">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="473.766" y="232"/>
+	<column name="id" not-null="true" default-value="nextval('service_types_id_seq'::regclass)">
+		<type name="integer"/>
+	</column>
+	<column name="type">
+		<type name="character varying"/>
+	</column>
+	<column name="created_at" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<column name="updated_at" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<constraint name="service_types_pkey" type="pk-constr" factor="100" table="public.service_types">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<sequence name="tuition_statuses_id_seq"
+	 start="1" increment="1"
+	 min-value="1" max-value="9223372036854775807"
+	 cache="1" cycle="false">
+	<schema name="public"/>
+	<role name="postgres"/>
+</sequence>
+
+<table name="tuition_statuses">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1379.77" y="50"/>
+	<column name="id" not-null="true" default-value="nextval('tuition_statuses_id_seq'::regclass)">
+		<type name="integer"/>
+	</column>
+	<column name="status">
+		<type name="character varying"/>
+	</column>
+	<column name="created_at" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<column name="updated_at" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<constraint name="tuition_statuses_pkey" type="pk-constr" factor="100" table="public.tuition_statuses">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+</dbmodel>
