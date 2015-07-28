@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+body {height: 700px; background: linear-gradient(#27B7E2, #FFF);}
+
+
+.logo	{
+			height: 200px;
+			width: 200px;
+			background-image: url("public/images/logo/logo.png");
+		}

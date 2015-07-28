@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  service_type: 
-  tuition_id: 
-  value: 
+  service_type: manha
+  tuition_id: 1
+  value: 600
 
 two:
-  service_type: 
-  tuition_id: 
-  value: 
+  service_type: integral
+  tuition_id: 2
+  value: 900

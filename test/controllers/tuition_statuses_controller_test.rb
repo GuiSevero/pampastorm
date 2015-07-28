@@ -2,7 +2,7 @@ require 'test_helper'
 
 class TuitionStatusesControllerTest < ActionController::TestCase
   setup do
-    @tuition_status = tuition_statuses(:one)
+    @tuition_status = tuition_statuses(:pago)
   end
 
   test "should get index" do
@@ -18,7 +18,7 @@ class TuitionStatusesControllerTest < ActionController::TestCase
 
   test "should create tuition_status" do
     assert_difference('TuitionStatus.count') do
-      post :create, tuition_status: { id: @tuition_status.id, status: @tuition_status.status }
+      post :create, tuition_status: { id: 3, status: "agendado" }
     end
 
     assert_redirected_to tuition_status_path(assigns(:tuition_status))

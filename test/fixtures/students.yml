@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: 
-  enrollment_date: 
-  birth_date: 
-  address: 
+  name: Rodrigo
+  enrollment_date: 15/08/1992
+  birth_date: 26/02/1991
+  address: Rua Pereira Neto
   zip_code: MyString
 
 two:
-  name: 
-  enrollment_date: 
-  birth_date: 
-  address: 
+  name: Karine
+  enrollment_date: 11/11/1998
+  birth_date: 04/03/1997
+  address: Rua Pereira Neto
   zip_code: MyString

@@ -1,19 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: Décio
   student_id: 1
-  occupation: MyString
-  mobile_number: MyString
-  residencial_number: MyString
-  comercial_number: MyString
-  relation_type: MyString
+  occupation: Contador
+  mobile_number: 9999999
+  residencial_number: 33333333
+  comercial_number: 
+  relation_type:  Pai
 
 two:
-  name: MyString
+  name: Silvana
   student_id: 1
-  occupation: MyString
-  mobile_number: MyString
-  residencial_number: MyString
-  comercial_number: MyString
-  relation_type: MyString
+  occupation: Administradora
+  mobile_number: 9999999
+  residencial_number: 33333333
+  comercial_number: 
+  relation_type: Mãe

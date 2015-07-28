@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ServiceTypesControllerTest < ActionController::TestCase
   setup do
-    @service_type = service_types(:one)
+    @service_type = service_types(:integral)
   end
 
   test "should get index" do

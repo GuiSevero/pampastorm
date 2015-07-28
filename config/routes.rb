@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  root 'pages#index'
+
+
   resources :responsibles
   resources :students
-  root   'sessions#new'
+  get    'login'   =>   'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
   resources :tuition_statuses
